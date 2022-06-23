@@ -27,7 +27,8 @@ router.get('/:id', async (req, res) => {
       include: [{ model: Product }],
     })
     if (!singleTag) {
-      res.status(404).json({ message: 'No tag found with that id!' })
+      res.status(404).json({ message: 'No Tag found with that id!' })
+      return;
     }
     res.status(200).json(singleTag)
   } catch (err) {
@@ -48,12 +49,29 @@ router.post('/', async (req, res) => {
   }
 });
 
+
+// update a tag's name by its `id` value
+// NOTES: Added async
 router.put('/:id', (req, res) => {
-  // update a tag's name by its `id` value
 });
 
-router.delete('/:id', (req, res) => {
-  // delete on tag by its `id` value
+// delete on tag by its `id` value
+// NOTES: Added async
+router.delete('/:id', async (req, res) => {
+  try {
+    const delTag = Tag.destroy({
+      where: {
+        id: req.params.id,
+      },
+    })
+    if (!delTag) {
+      res.status(404).json({ message: 'No Tag found with that id!' })
+      return;
+    }
+    res.status(200).json({ mesage: 'Tag Deleted' })
+  } catch (err) {
+    res.status(500).json('Something went wrong', err)
+  }
 });
 
 module.exports = router;
