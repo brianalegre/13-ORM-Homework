@@ -38,6 +38,11 @@ router.get('/:id', async (req, res) => {
 
 
 // create a new tag
+/* req.body
+{
+  "tag_name": "newTagFor15"
+}
+*/
 // NOTES: Added async
 router.post('/', async (req, res) => {
   try {
