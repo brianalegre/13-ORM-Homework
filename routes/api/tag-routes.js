@@ -10,11 +10,11 @@ router.get('/', async (req, res) => {
   try {
     const allTags = await Tag.findAll({
       include: [{ model: Product }],
-    })
+    });
     res.status(200).json(allTags)
   } catch (err) {
     res.status(500).json('Something went wrong', err)
-  }
+  };
 });
 
 
@@ -54,7 +54,7 @@ router.post('/', async (req, res) => {
 // NOTES: Added async
 router.put('/:id', async (req, res) => {
   try {
-    const updateTag = Tag.update(req.body, {
+    const updateTag = await Tag.update(req.body, {
       where: {
         id: req.params.id,
       },
@@ -72,7 +72,7 @@ router.put('/:id', async (req, res) => {
 // NOTES: Added async
 router.delete('/:id', async (req, res) => {
   try {
-    const delTag = Tag.destroy({
+    const delTag = await Tag.destroy({
       where: {
         id: req.params.id,
       },
