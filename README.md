@@ -1,7 +1,6 @@
 # 13-ORM-Homework
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-
 ## Table of Contents 📑
 - [Description](#description)
 - [Application Preview](#application-preview)
@@ -13,26 +12,38 @@
 - [Questions](#questions)
 - [License](#license)
 
-
-
 ## Description
 Build the back end for an e-commerce site by modifying starter code. Configure a working Express.js API to use Sequelize to interact with a MySQL database.
 
 ## Application Preview
 <p align="left">
-    <img alt="" src=".">
+    <img alt="E Commerce Back End Demo 1" src="./assets/images/ECommerceBackEndDemoGif1.gif">
 </p>
 
+<p align="left">
+    <img alt="E Commerce Back End Demo 2" src="./assets/images/ECommerceBackEndDemoGif2.gif">
+</p>
 
 ## Installation
+- Copy the repository to your system
+- Create .env file
+    - SET DB_NAME to 'ecommerce_db'
+    - SET DB_USER to 'YOUR-MYSQL-USERNAME'
+    - SET DB_PASSWORD to 'YOUR-MYSQL-PASSWORD'
+- npm install
+- Load schema.sql via MySQL command line:
+    - source schema.sql
+- npm run seed
+- node index.js
 
 ## Usage
+Back End application using CRUD API routes with a MySQL database
 
 ## Links
 -   Github Repository:
     - https://github.com/brianalegre/12-MySQL-Homework
 -   Video Demo (YouTube):
-    - PENDING
+    - https://youtu.be/Jc4VCyV0nwQ
 -   Vide Demo (Github):
     - PENDING
 
@@ -58,7 +69,6 @@ Build the back end for an e-commerce site by modifying starter code. Configure a
 - MySQL2
 - Sequelize
 - dotenv
-
 
 ## Questions
 Questions? Concerns?  Contact Me Below:
