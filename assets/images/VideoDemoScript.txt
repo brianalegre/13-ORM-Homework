@@ -1,0 +1,45 @@
+ORM Walkthru Script
+
+Create Schema -> Run Seeds
+ - npm i
+ - mysql -u root -p
+ - source db/schema.sql
+ - npm run seed
+ 
+Start Application
+ - node server.js
+ 
+GET Routes for ALL
+http://localhost:3001/api/categories
+ - Categories
+ - Products
+ - Tags
+**CREATE SAVED VERSIONS TO EASILY DEMO
+
+GET Routes for SINGLE
+http://localhost:3001/api/categories
+ - Categories
+ - Products
+ - Tags
+**CREATE SAVED VERSIONS TO EASILY DEMO
+
+POST Routes
+http://localhost:3001/api/categories
+ - Categories
+ - Products
+ - Tags
+**CREATE SAVED VERSIONS TO EASILY DEMO
+
+PUT Routes
+http://localhost:3001/api/categories
+ - Categories
+ - Products
+ - Tags
+**CREATE SAVED VERSIONS TO EASILY DEMO
+
+DELETE Rotues
+http://localhost:3001/api/categories
+ - Categories
+ - Products
+ - Tags
+**CREATE SAVED VERSIONS TO EASILY DEMO
