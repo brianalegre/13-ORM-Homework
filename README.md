@@ -34,7 +34,7 @@ Build the back end for an e-commerce site by modifying starter code. Configure a
 - Load schema.sql via MySQL command line:
     - source schema.sql
 - npm run seed
-- node index.js
+- node server.js
 
 ## Usage
 Back End application using CRUD API routes with a MySQL database
