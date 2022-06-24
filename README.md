@@ -45,7 +45,7 @@ Back End application using CRUD API routes with a MySQL database
 -   Video Demo (YouTube):
     - https://youtu.be/Jc4VCyV0nwQ
 -   Vide Demo (Github):
-    - PENDING
+    - https://github.com/brianalegre/13-ORM-Homework/blob/main/assets/images/ECommerceBackEndDemo.mp4
 
 ## Criteria
 - Use a .env file
